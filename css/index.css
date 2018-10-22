@@ -1,0 +1,101 @@
+/* Var declation */
+
+/* Default setting */
+body{
+    margin: 0;
+    padding: 0;
+}
+p{  
+    margin:0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+}
+button{
+    background: #0E0E0E;
+    border: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;    
+    padding: .7em 1.2em .7em 1.2em;
+    font-size: 1em;
+    border-radius: 2em;
+    transition: .3s;
+}
+button:hover{
+    background: rgb(58, 58, 58);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 90%;
+    height: 100vh;
+}
+
+.topic{
+    text-align: center;
+    font-size: 3em;
+}
+
+/* content */
+.text_wrapper{
+    width: 60%;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.text_wrapper>p>b{
+    font-size: 1.3em;
+}
+
+/* Homepage */
+#home{
+    background: #6DB828;
+}
+#home_text{
+    font-size: 3rem;
+}
+
+.pic_wrapper{
+    float: right;
+}
+
+/* about */
+.textbox{
+    padding-top: 4rem;
+    width: 60vw;
+    position: absolute;
+}
+#about_text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    /* padding : 3rem; */
+   width: 90%;
+}
+#about_text>p{
+    margin: 1em 0 .2em 0;
+}
+#pic_about{
+    float: right;
+    width: 30vw;
+    height: inherit;
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* cactus */
+.selector{
+    padding-top: 5%;
+    margin: auto;
+    max-width: 90%;
+    height: 95vh;
+}
+#big_img{
+    padding-top: 6%;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

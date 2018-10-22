@@ -1,12 +1,8 @@
-// // to top every time user refresh
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-//   }
-
-  
 $(document).ready(function(){
-    
-    $("#t_header").fadeIn("slow", function(){
-                    });
-    
+    $("#enter").on("click", function(){
+        let target = $($(this).attr('href'));
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 600);
+    });
 });
