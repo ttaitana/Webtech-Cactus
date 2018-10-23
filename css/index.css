@@ -35,6 +35,61 @@ button:hover{
     font-size: 3em;
 }
 
+/* navbar */
+.navbar{
+    position: fixed;
+    z-index: 999;
+    top: 45%;
+    right: -20%;
+    transform: translateY(-30%);
+    transition: .5s ease-out;
+}
+li>a{
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+}
+.navbar .nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navbar .nav-menu li {
+    position: relative;
+    min-width: 200px;
+    text-align: center;
+    transition: .3s;
+
+}
+.navbar .nav-menu li .dot {
+    display: block;
+    color: #0E0E0E;
+    padding: 5px 0;
+    margin: 10% 0 10% 0;
+  }
+
+
+.active{
+    background: #0E0E0E;
+    transition:.3s;
+    
+}
+.active>span{
+    color: #fff;
+}
+
+.hover{
+    background: #0E0E0E;
+    opacity: .7;
+    transition: .3s;
+}
+.hover>span{
+    color: #fff;
+}
+  
+
+
 /* content */
 .text_wrapper{
     width: 60%;
@@ -51,10 +106,14 @@ button:hover{
 
 /* Homepage */
 #home{
-    background: #6DB828;
+    /* background: #6DB828; */
+    background-image: url(../img/test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #home_text{
     font-size: 3rem;
+    color: aliceblue;
 }
 
 .pic_wrapper{
@@ -72,7 +131,7 @@ button:hover{
     font-size: 1.5em;
     font-weight: 100;
     /* padding : 3rem; */
-   width: 90%;
+    width: 90%;
 }
 #about_text>p{
     margin: 1em 0 .2em 0;
@@ -88,14 +147,49 @@ button:hover{
 
 /* cactus */
 .selector{
-    padding-top: 5%;
+    padding-top: 6%;
     margin: auto;
     max-width: 90%;
-    height: 95vh;
+    /* height: 95vh; */
 }
 #big_img{
     padding-top: 6%;
     margin-left: auto;
 	margin-right: auto;
-	display: block;
+    display: block;
+}
+
+/* card */
+div.choice{
+}
+.card{
+    margin: 12% 0 0 15%;
+    position: absolute;
+    width: 15%;
+    height: 9vh;
+    background: linear-gradient(0deg, rgba(0, 0, 200, 0.2) , rgba(0, 0, 200, 0) );
+    box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
+    transition: .5s;
+    /* text-align: center; */
+    line-height: 9vh;
+    overflow: hidden;
+}
+.card_left{
+    
+}
+.card_right{
+    margin-left: 70vw;
+}
+.card_under{
+    margin-top: 65vh;
+}
+.card_topic{
+    font-size: 2em;
+    text-align: center;
+}
+.text_holder{
+    padding: 1em;
+}
+.card>p{
+    
 }
