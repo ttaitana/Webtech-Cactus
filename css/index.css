@@ -147,7 +147,7 @@ li>a{
 
 /* cactus */
 .selector{
-    padding-top: 6%;
+    padding-top: 4%;
     margin: auto;
     max-width: 90%;
     /* height: 95vh; */
@@ -160,18 +160,17 @@ li>a{
 }
 
 /* card */
-div.choice{
-}
+
 .card{
-    margin: 12% 0 0 15%;
+    margin: 10% 0 0 15%;
     position: absolute;
     width: 15%;
-    height: 9vh;
-    background: linear-gradient(0deg, rgba(0, 0, 200, 0.2) , rgba(0, 0, 200, 0) );
+    height: 7vh;
+    background: #ebd140;
     box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
     transition: .5s;
     /* text-align: center; */
-    line-height: 9vh;
+    line-height: 7vh;
     overflow: hidden;
 }
 .card_left{
@@ -192,4 +191,37 @@ div.choice{
 }
 .card>p{
     
+}
+
+/* get money */
+#money{
+    overflow: hidden;
+}
+#money_topic{
+    padding: 4% 0 4% 0;
+}
+
+.slider{
+    width: 200%;
+    transform: translateX(0%);
+    transition: 1s ease-in-out;
+}
+
+.box{
+    background-color: rgb(107, 199, 54);
+    box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
+    margin: 0 5% 0 0;
+    width: 24vw;
+    height: 60vh;
+    display: inline-flex;
+}
+
+.money_page{
+    margin-top: 3%;
+    padding: auto;
+}
+
+.btn_active{
+    color: coral;
+    background: #000;
 }

@@ -57,9 +57,25 @@ $(document).ready(function(){
             $(this).css('width', '20%');
             
         }, function(){
-            $(this).css('height', '9vh');   
+            $(this).css('height', '7vh');   
             $(this).css('width', '15%');
             
         }
     );
+
+    // money card
+    $(".money_btn").on('click', function(){
+        if($(this).html() == '1'){
+            $("#page1").addClass('btn_active');
+            $("#page2").removeClass('btn_active');
+
+            $('.slider').css('transform', 'translateX(0%)')
+
+        }else{
+            $("#page1").removeClass('btn_active');
+            $("#page2").addClass('btn_active');
+            $('.slider').css('transform', 'translateX(-56%)')
+            
+        }
+    });
 });
