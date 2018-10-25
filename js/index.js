@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     }
 
-
+    // navbar auto change
     let findNav = function(){
         let screen = $(window).scrollTop();
         $("section").each(function(){
@@ -24,10 +24,10 @@ $(document).ready(function(){
         });
     }
 
+    // navbar showing
     $(document).on("mousemove", function(event){
         // console.log(event.pageX);
         if (event.pageX > ($(window).width() * 0.85)){
-            // console.log("Show");
             $(".navbar").css("right", "0%");
         }else{
             $(".navbar").css("right", "-20%");
@@ -55,6 +55,7 @@ $(document).ready(function(){
         function(){
             $(this).css('height', '40vh');
             $(this).css('width', '20%');
+
             
         }, function(){
             $(this).css('height', '7vh');   

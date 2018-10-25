@@ -107,13 +107,13 @@ li>a{
 /* Homepage */
 #home{
     /* background: #6DB828; */
-    background-image: url(../img/test.jpg);
+    background-image: url(../img/cactus.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #home_text{
     font-size: 3rem;
-    color: aliceblue;
+    color: rgb(31, 34, 36);
 }
 
 .pic_wrapper{
@@ -189,7 +189,15 @@ li>a{
 .text_holder{
     padding: 1em;
 }
+.text_holder>p{
+    height: 22vh;
+}
 .card>p{
+    
+}
+.choice_btn{
+    /* display: none; */
+    position: relative;
     
 }
 
@@ -223,5 +231,5 @@ li>a{
 
 .btn_active{
     color: coral;
-    background: #000;
+    /* background: #000; */
 }
