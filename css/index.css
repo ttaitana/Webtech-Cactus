@@ -107,7 +107,7 @@ li>a{
 /* Homepage */
 #home{
     /* background: #6DB828; */
-    background-image: url(../img/cactus.svg);
+    /* background-image: url(../img/cactus.svg); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -118,6 +118,9 @@ li>a{
 
 .pic_wrapper{
     float: right;
+}
+#enter>button{
+    margin-top: 1em;
 }
 
 /* about */
@@ -143,6 +146,30 @@ li>a{
     background-image: url(../img/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#know{
+    font-size: .8em;
+}
+
+/* Video bg */
+.fullscreen-bg {
+    margin: -1em 0em 0em -0.6em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* width: cover; */
+    height: auto;
 }
 
 /* cactus */
@@ -183,8 +210,10 @@ li>a{
     margin-top: 65vh;
 }
 .card_topic{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    font-weight: 600;
+    color: rgb(33, 41, 37);
 }
 .text_holder{
     padding: 1em;
