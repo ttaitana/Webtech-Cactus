@@ -180,11 +180,15 @@ li>a{
     /* height: 95vh; */
 }
 #big_img{
-    padding-top: 6%;
+    margin-top: -10%;
     margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    
+    width: auto;
+    height: 120vh;
     display: block;
 }
+
 
 /* card */
 
@@ -210,15 +214,28 @@ li>a{
     margin-top: 65vh;
 }
 .card_topic{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(33, 41, 37);
+}
+.card_subtopic{
     font-size: 1.5em;
     text-align: center;
     font-weight: 600;
     color: rgb(33, 41, 37);
 }
+.card_intro{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: rgb(33, 41, 37);
+}
 .text_holder{
     padding: 1em;
+    line-height: normal;
 }
 .text_holder>p{
+    font-size: 1.3em;
     height: 22vh;
 }
 .card>p{
