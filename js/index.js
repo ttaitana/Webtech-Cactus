@@ -15,7 +15,7 @@ $(document).ready(function(){
         let screen = $(window).scrollTop();
         $("section").each(function(){
             let id = $(this).attr('id'),
-                offset = $(this).offset().top-1,
+                offset = $(this).offset().top-100,
                 height = $(this).height();
             if(screen >= offset && screen <= offset+height){
                 nav.removeClass('active');
@@ -24,21 +24,12 @@ $(document).ready(function(){
         });
     }
 
-    // navbar showing
-    $(document).on("mousemove", function(event){
-        // console.log(event.pageX);
-        if (event.pageX > ($(window).width() * 0.85)){
-            $(".navbar").css("right", "0%");
-        }else{
-            $(".navbar").css("right", "-20%");
-        }
-    });
     
-    $(nav).hover(
+    $('.navbar').hover(
         function(){
-            $(this).addClass('hover');
+            $(this).css('opacity', '1');
         }, function(){
-            $(this).removeClass('hover');   
+            $(this).css('opacity', '.5');
         }
     );
 
@@ -79,4 +70,15 @@ $(document).ready(function(){
             
         }
     });
+
+    // card text show
+    $('.box').hover(
+        function(){
+            $(this).children('img').css('opacity', '.3');
+            $(this).children('.box-cover').css('transform', 'translateY(0em)');
+        }, function(){
+            $(this).children('img').css('opacity', '1');
+            $(this).children('.box-cover').css('transform', 'translateY(-30em)')
+        }
+    )
 });
