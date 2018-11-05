@@ -55,11 +55,13 @@ $(document).ready(function(){
         function(){
             $(this).css('height', '40vh');
             $(this).css('width', '20%');
+            $(this).css('background', '#B5A08E');
 
             
         }, function(){
             $(this).css('height', '7vh');   
             $(this).css('width', '15%');
+            $(this).css('background', '#D1C9C1');
             
         }
     );
@@ -83,7 +85,7 @@ $(document).ready(function(){
     // card text show
     $('.box').hover(
         function(){
-            $(this).children('img').css('opacity', '.3');
+            $(this).children('img').css('opacity', '.1');
             $(this).children('.box-cover').css('transform', 'translateY(0em)');
         }, function(){
             $(this).children('img').css('opacity', '1');
