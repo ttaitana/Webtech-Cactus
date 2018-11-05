@@ -13,18 +13,26 @@ $(document).ready(function(){
     // navbar auto change
     let findNav = function(){
         let screen = $(window).scrollTop();
-        $("section").each(function(){
+        $("section").each(function() {
             let id = $(this).attr('id'),
                 offset = $(this).offset().top-100,
                 height = $(this).height();
             if(screen >= offset && screen <= offset+height){
                 nav.removeClass('active');
-                $(".navbar").find('[data-scroll="' + id + '"]').addClass('active');
+                $(".navbar").find('[data-scroll="' + id + '"]').addClass('active');   
             }
         });
     }
 
-    
+    let showNav = function(){
+        let screen = $(window).scrollTop();
+        if(screen < $('#about').offset().top-500){
+            $(".navbar").css('transform', 'translateY(-50%) translateX(12em)');
+        }else{
+            $(".navbar").css('transform', 'translateY(-50%) translateX(0em)')
+        }
+    }
+
     $('.navbar').hover(
         function(){
             $(this).css('opacity', '1');
@@ -37,7 +45,8 @@ $(document).ready(function(){
 
     $(nav).on("click", smooth_scroll);
 
-    $(window).on('scroll', findNav);
+    $(window).scroll(showNav);
+    $(window).scroll(findNav);
 
 
 
