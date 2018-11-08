@@ -4,8 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    /* background: #F7F7F7; */
-    background: linear-gradient(to bottom, #F5F5F5, #fff);
+    background: #F7F7F7;
 }
 p{  
     margin:0;
@@ -53,7 +52,7 @@ li>a{
     z-index: 999;
     top: 50%;
     right: 2%;
-    transform: translateY(-50%) translateX(12em);
+    transform: translateY(-50%);
     transition: .5s;
 }
 .navbar .nav-menu {
@@ -183,11 +182,6 @@ li>a{
 }
 
 /* about */
-#about{
-    background-image: url(ssss.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .textbox{
     padding-top: 4rem;
     width: 59vw;
@@ -211,6 +205,7 @@ li>a{
     background-image: url(../img/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 35em;
 }
 #know{
     font-size: .8em;
@@ -242,7 +237,8 @@ li>a{
     padding-top: 4%;
     margin: auto;
     max-width: 90%;
-    height: 95vh;
+    /* height: 95vh; */
+    margin-top: 35em;
 }
 #big_img{
     margin-top: -10%;
@@ -262,9 +258,9 @@ li>a{
     position: absolute;
     width: 15%;
     height: 7vh;
-    background: #D1C9C1;
+    background: #F5FDC6;
     box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
-    transition: .5s ease-in-out;
+    transition: .5s;
     /* text-align: center; */
     line-height: 7vh;
     overflow: hidden;
@@ -317,8 +313,6 @@ li>a{
     overflow: hidden;
 }
 #money_topic{
-    font-weight: 600;
-    font-size: 2.2em;
     padding: 4% 0 4% 0;
 }
 
@@ -359,7 +353,7 @@ li>a{
 }
 
 .btn_active{
-    color: #78B57F;
+    color: coral;
     /* background: #000; */
 }
 .box-cover{
@@ -389,20 +383,8 @@ li>a{
 }
 .box-cover>button{
     margin-top: 2em;
-    background: #fff;
-    color: #0E0E0E;
-}
-.box-cover>button:hover{
-    background: #78B57F;
 }
 .highlight{
     color: #ffc700;
     font-weight: 400;
-}
-
-/* footer */
-.footer{
-    background: #333f2f;
-    width: 100%;
-    height: 30vh;
 }
