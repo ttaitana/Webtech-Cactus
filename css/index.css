@@ -29,6 +29,7 @@ hr{
     /* background-color: #fff; */
 	border: 2px dashed #ffffff;
 }
+
 .container{
     margin: 0 auto;
     max-width: 90%;
@@ -194,6 +195,7 @@ li>a{
     position: absolute;
     left: 40%;
 }
+
 #about_text{
     font-family: 'Kanit', sans-serif;
     font-size: 1.5em;

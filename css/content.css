@@ -8,6 +8,31 @@ p{
     padding: 0;
     margin: 0;
 }
+
+h3 {
+    display: block;
+    font-size: 2em;
+    font-family: 'Kanit-light';
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    width:500px;
+    height:500px;
+}
+
+.im {
+    height: 200px;
+    width: 200px;
+    background-color: powderblue;
+}
 /* navbar */
 .navbar {
     position: fixed;
@@ -97,10 +122,23 @@ p{
     margin: .5em 0 1em 0;
 }
 
+#credit{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0em; 
+}
+
 #topic{
     font-size: 2.5em;
     font-family: 'Kanit-bold';
     /* text-align: center; */
+}
+#content_text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    /* padding : 3rem; */
+    width: 90%;
 }
 .content-holder{
     width: 60%;
