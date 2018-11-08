@@ -23,6 +23,21 @@ h3 {
 img {
     
 }
+.img-big{
+    
+}
+
+.img-small{
+
+}
+
+.img-full{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100% !important;
+}
+
 
 .img-full{
     display: block;
