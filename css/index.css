@@ -4,7 +4,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: #F7F7F7;
+    /* background: #F7F7F7; */
+    background: linear-gradient(to bottom, #F5F5F5, #fff);
 }
 p{  
     margin:0;
@@ -52,7 +53,7 @@ li>a{
     z-index: 999;
     top: 50%;
     right: 2%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(12em);
     transition: .5s;
 }
 .navbar .nav-menu {
@@ -182,6 +183,11 @@ li>a{
 }
 
 /* about */
+#about{
+    background-image: url(ssss.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .textbox{
     padding-top: 4rem;
     width: 59vw;
@@ -256,9 +262,9 @@ li>a{
     position: absolute;
     width: 15%;
     height: 7vh;
-    background: #F5FDC6;
+    background: #D1C9C1;
     box-shadow: 9px 7px 40px -6px rgba(0,0,0,0.25);
-    transition: .5s;
+    transition: .5s ease-in-out;
     /* text-align: center; */
     line-height: 7vh;
     overflow: hidden;
@@ -311,6 +317,8 @@ li>a{
     overflow: hidden;
 }
 #money_topic{
+    font-weight: 600;
+    font-size: 2.2em;
     padding: 4% 0 4% 0;
 }
 
@@ -351,7 +359,7 @@ li>a{
 }
 
 .btn_active{
-    color: coral;
+    color: #78B57F;
     /* background: #000; */
 }
 .box-cover{
@@ -381,8 +389,20 @@ li>a{
 }
 .box-cover>button{
     margin-top: 2em;
+    background: #fff;
+    color: #0E0E0E;
+}
+.box-cover>button:hover{
+    background: #78B57F;
 }
 .highlight{
     color: #ffc700;
     font-weight: 400;
+}
+
+/* footer */
+.footer{
+    background: #333f2f;
+    width: 100%;
+    height: 30vh;
 }
