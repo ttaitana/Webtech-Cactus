@@ -23,12 +23,22 @@ h3 {
 img {
     
 }
+.img-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+}
 .img-big{
-    
+    grid-row: 1 / 4;
+    width: 99% !important;
+    top:0;
+    bottom:0;
+    margin: auto !important;
 }
 
 .img-small{
-
+    width: 26em !important;
+    margin-bottom: 1em !important;
 }
 
 .img-full{
@@ -152,7 +162,7 @@ li{
     right: 0;
     bottom: 0;
     fill: #F5F6F5;
-
+    
 }
 
 /* ----------------------- */
