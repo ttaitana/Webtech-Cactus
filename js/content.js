@@ -1,9 +1,11 @@
 $(document).ready(function(){
     let showNav = function(){
         if($(window).scrollTop() > 100){
-            $('.navbar').css('background', "#F5F6F5");
+            $('.navbar').css('background', "#37B271");
+            $('.btn').css('transform', 'scale(1)');
         }else{
             $('.navbar').css('background', "rgba(0, 0, 0, 0)");
+            $('.btn').css('transform', 'scale(0)');
         }
     }
 

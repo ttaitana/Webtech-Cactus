@@ -206,6 +206,9 @@ li>a{
 #about_text>p{
     margin: 1em 0 .2em 0;
 }
+#about_text>a>button{
+    font-size: .8em;
+}
 #pic_about{
     float: left;
     width: 30vw;
@@ -305,13 +308,13 @@ li>a{
     font-size: 1.3em;
     height: 22vh;
 }
+
 .card>p{
     
 }
 .choice_btn{
     /* display: none; */
     position: relative;
-    
 }
 
 /* get money */
